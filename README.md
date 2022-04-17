@@ -6,6 +6,10 @@
 1. [Overview](https://github.com/catsdata/MechaCar_Statistical_Analysis#overview)
 2. [Resources](https://github.com/catsdata/MechaCar_Statistical_Analysis#resources)
 3. [Results](https://github.com/catsdata/MechaCar_Statistical_Analysis#results)
+    - [Linear Regression](https://github.com/catsdata/MechaCar_Statistical_Analysis#linear-regression-to-predict-mpg)
+    - [Summary Statistics](https://github.com/catsdata/MechaCar_Statistical_Analysis#summary-statistics-on-suspension-coils)
+    - [T-Tests](https://github.com/catsdata/MechaCar_Statistical_Analysis#t-tests-on-suspension-coils)
+    - [Study Design](https://github.com/catsdata/MechaCar_Statistical_Analysis#study-design-mechacar-vs-competition)
 4. [Summary](https://github.com/catsdata/MechaCar_Statistical_Analysis#summary)
 
 </p>
@@ -36,11 +40,29 @@ Requests:
 
 ### Linear Regression to Predict MPG
 
-write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+Performed a linear regression analysis to determine if we can predict the mpg of the MechaCar prototypes.
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+<center>
+    <img src="https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del1_1.PNG">
+</center>
+
+
+
+![Linear Regression](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del1_2.PNG)
+
+
+![Summary](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del1_3.PNG)
+
+**Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
+
+
+
+**Is the slope of the linear model considered to be zero? Why or why not?**
+
+
+**Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
+
+
 
 
 ### Summary Statistics on Suspension Coils
