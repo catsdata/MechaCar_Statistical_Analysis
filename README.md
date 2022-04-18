@@ -40,42 +40,56 @@ Requests:
 
 ### Linear Regression to Predict MPG
 
-Performed a linear regression analysis to determine if we can predict the mpg of the MechaCar prototypes.
+Performed a linear regression analysis to determine if we can predict the mpg of the MechaCar prototypes.  To do so, we loaded in the 'dplyr' library, imported our csv data, performed the linear regression and printed a summary of the statistics.
 
-<center>
-    <img src="https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del1_1.PNG">
-</center>
-
-
+![Code](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del1_1.PNG)
 
 ![Linear Regression](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del1_2.PNG)
-
 
 ![Summary](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del1_3.PNG)
 
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
 
-
+Assuming our p-value is at a standard 0.05, the following variables do not provide random variance due to a much lower, and near zero, p-value: Vehicle Length (2.60e-12) and Ground Clearance (5.21e-08).  These variables seem to have a significant impact on mpg.
 
 **Is the slope of the linear model considered to be zero? Why or why not?**
 
+The slope of our linear modeal is not zero.  Our overall p-value of 5.35e-11 allows us to reject the null hypothesis.
 
 **Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 
-
+Our R-squared of 0.7149 indicates a strong linear relationship; meaning this model will assist in predicting the mpg of MechaCar prototypes.
 
 
 ### Summary Statistics on Suspension Coils
 
-write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+**The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+![Overall](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del2_2.PNG)
 
+As seen in our Manufacturing Lot overall summary above, our variance in the PSI is 62.29356, which is well below our specs to be less than 100 lbs per square inch.
+
+![Lots](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del2_1.PNG)
+
+However, when we break out our stats on each Manufacturing Lot, we see that Lot 3 has far exceeded our threshold with 170.2861224; 70 lbs over our 100 spec.   
+Lots 1 and 2 are both within spec with minimal variance.
 
 ### T-Tests on Suspension Coils
 
-briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary
+To further analyze the stats on our Manufacturing Lots, we ran t-tests for the entire production and individual lots.  
 
+![Overall](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del3_2.PNG)
+
+Over the entire production, we see our p-value is 0.06028, which puts us within the standard 95% confidence level.  However, this is not absolute, since we know that the variance of Lot 3 is off as seen above.   So we break down the t-tests on each lot.
+
+![Lot1](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del3_3.PNG)
+![Lot2](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del3_4.PNG)
+
+Lot 1 and Lot 2 both have p-values above 0.05, 1 and 0.6072 respecively, and support our overall production t-test.
+
+![Lot3](https://github.com/catsdata/MechaCar_Statistical_Analysis/blob/main/Images/Del3_5.PNG)
+
+For Lot 3, as suspected, the p-value is under our threshold at 0.04168, which matches our concern with the variance on the PSI specs.
 
 ### Study Design: MechaCar vs Competition
 
