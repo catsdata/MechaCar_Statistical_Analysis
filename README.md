@@ -50,7 +50,7 @@ Performed a linear regression analysis to determine if we can predict the mpg of
 
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
 
-Assuming our p-value is at a standard 0.05, the following variables do not provide random variance due to a much lower, and near zero, p-value: Vehicle Length (2.60e-12) and Ground Clearance (5.21e-08).  These variables seem to have a significant impact on mpg.
+Assuming our p-value is at a standard 0.05 significance level, the following variables do not provide random variance due to a much lower, and near zero, p-value: Vehicle Length (2.60e-12) and Ground Clearance (5.21e-08).  These variables will likely have a significant impact on mpg.
 
 **Is the slope of the linear model considered to be zero? Why or why not?**
 
@@ -58,7 +58,7 @@ The slope of our linear modeal is not zero.  Our overall p-value of 5.35e-11 all
 
 **Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 
-Our R-squared of 0.7149 indicates a strong linear relationship; meaning this model will assist in predicting the mpg of MechaCar prototypes.
+Our R-squared of 0.7149 indicates a strong correlation; meaning this model will assist in predicting the mpg of MechaCar prototypes.
 
 
 ### Summary Statistics on Suspension Coils
@@ -93,21 +93,9 @@ For Lot 3, as suspected, the p-value is under our threshold at 0.04168, which ma
 
 ### Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+A statistical study to compare MachaCar to the competition would be to evaluate safety ratings for vehicles that acheive similar mpg.  Consumers tend to narrow down the type of vehicle they're interested in based on primary needs, and then evaluate safety to assist in final decision making.  MachaCar should be at the top of those safety ratings as well to make sure they are the #1 choice,
 
-In your description, address the following questions (Use the statistical cheat sheet below to help you in your statistical design):
-- What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
-
-You will earn a perfect score for Deliverable 4 by completing all requirements below:
-
-The statistical study design has the following:
-- A metric to be tested is mentioned (5 pt)
-- A null hypothesis or an alternative hypothesis is described (5 pt)
-- A statistical test is described to test the hypothesis (5 pt)
-- The data for the statistical test is described (5 pt)
+Data we would need would be safety ratings of competition vehicles within the same class (sedan, sport, suv, etc) and within close range of MechaCar's average mpg. The null hypothesis would be there is no significant difference in safety between manufacturers.   However, since MechaCar is #1, we would alternatively hypthesize that there is a significant difference in favor of MechaCar.  Tests would be similar to that run above.  Multiple Linear Regression on mpg & safety & t-tests for p-values of significance.
 
 ## Summary
 
